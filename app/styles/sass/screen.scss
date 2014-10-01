@@ -1,0 +1,44 @@
+  ////////////////////////////////
+ // IMPORT FILES ////////////////
+////////////////////////////////
+
+@import "compass";
+@import "compass/typography/vertical_rhythm";
+@import 'modular-scale';
+// @import "singularitygs";
+
+// Partial Files
+
+@import "0_Utility/**/*";
+@import "1_Core/**/*";
+@import "2_Pieces/**/*";
+@import "3_Components/**/*";
+@import "4_Regions/**/*";
+@import "5_Layouts/**/*";
+@import "6_Pages/**/*";
+
+// Box Sizing
+
+* { 
+	@include box-sizing(border-box);
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+	background: $medicalGreen;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	@include font-size(14px);
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+    line-height: 1.5em;
+}

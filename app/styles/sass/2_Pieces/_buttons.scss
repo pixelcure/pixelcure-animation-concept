@@ -1,0 +1,48 @@
+  ////////////////////////////////
+ // BUTTONS  ////////////////////
+////////////////////////////////
+[data-role="top-btn"] {
+    @include border-radius(360px);
+    @include font-size(18px);
+    color: #FFF;
+    display: block;
+    height: 100%;
+    text-align: center;
+
+    &:hover {
+        background: darken(white, 10%);
+    }    
+
+} // End Top Button <---
+
+[data-role="button"], .button{
+
+    display:inline-block;
+    padding:10px;
+    text-align: center;
+    width: 100%;
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited{
+        text-decoration:none;
+
+    }
+
+    &:hover{
+
+
+    }
+
+    &:active,
+    &:focus{
+
+
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+} // End Global Button <---
+
