@@ -4,6 +4,7 @@ define(['jquery', 'backbone', 'scrollmagic', ], function(){
 	function init () {
 
 		var AnimationsView = Backbone.View.extend({
+			
 			initialize : function () {
 
 				var controller = new ScrollMagic();
@@ -25,7 +26,8 @@ define(['jquery', 'backbone', 'scrollmagic', ], function(){
 							.addTo(controller)
 
 			}
-		})
+
+		});
 	
 		var animationsView = new AnimationsView();
 

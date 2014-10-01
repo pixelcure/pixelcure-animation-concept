@@ -699,7 +699,7 @@ h1.header-bar {
   position: absolute;
   left: 50%;
   margin-left: -300px;
-  top: 50%;
+  top: 300px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
