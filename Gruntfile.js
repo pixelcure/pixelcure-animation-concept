@@ -173,10 +173,13 @@ module.exports = function (grunt) {
                     baseUrl: '<%= yeoman.app %>/scripts',
                     optimize: 'none',
                     paths: {
-                        'templates': '../../.tmp/scripts/templates',
-                        'jquery': '../../app/bower_components/jquery/jquery',
-                        'underscore': '../../app/bower_components/underscore/underscore',
-                        'backbone': '../../app/bower_components/backbone/backbone'
+                        'templates' : '../../.tmp/scripts/templates',
+                        'jquery' : '../bower_components/jquery/jquery',
+                        'backbone' : '../bower_components/backbone/backbone',
+                        'underscore' : '../bower_components/underscore/underscore',
+                        'gsap' : '../bower_components/gsap/src/minified/TweenMax.min',
+                        'scrollmagic' : '../bower_components/scrollmagic/js/jquery.scrollmagic.min'
+
                     },
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
                     // https://github.com/yeoman/grunt-usemin/issues/30
@@ -208,7 +211,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.{png,jpg,jpeg}',
+                    src: '{,*/}*.{png,jpg,jpeg, svg}',
                     dest: '<%= yeoman.dist %>/images'
                 }]
             }
@@ -281,7 +284,7 @@ module.exports = function (grunt) {
                     src: [
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
+                        '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,svg,webp}',
                         '/styles/fonts/{,*/}*.*',
                     ]
                 }

@@ -2,14 +2,14 @@
 
 require([
     'jquery',
-    'backbone',
     'underscore',
+    'backbone',
     'gsap',
     'scrollmagic',
     'slide-one/slide-one.main',
     'slide-two/slide-two.main',
     'slide-three/slide-three.main',
-], function ($, Backbone, _, gsap, ScrollMagic, slideOne, slideTwo, slideThree) {
+], function ($, _, Backbone, gsap, ScrollMagic, slideOne, slideTwo, slideThree) {
 
 	slideOne.init();
 	slideTwo.init();
