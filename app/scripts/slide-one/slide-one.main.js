@@ -9,7 +9,10 @@ define(['jquery', 'backbone', 'scrollmagic', ], function(){
 
 				var controller = new ScrollMagic();
 
-				var scene = new ScrollScene({ triggerElement: ".title-start", duration : 300 })
+				var tween = TweenMax.from(".title.start", 1.5, { backgroundColor: "transparent" });
+
+				var scene = new ScrollScene({ triggerElement: ".title-start", duration : 450 })
+							.setTween(tween)
 							.setPin(".title.start")
 							.addTo(controller);
 
